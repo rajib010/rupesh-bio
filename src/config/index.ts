@@ -1,19 +1,25 @@
 // technical skills 
 import mysql from "@/assets/mysql.png"
 import excel from "@/assets/excel.png"
+import word from "@/assets/word.png"
+import powerpoint from "@/assets/powerpoint.png"
+import powerbi from "@/assets/powerbi.png"
+import r from "@/assets/r.png"
 
 // other skills
 
 import agility from "@/assets/agility.png"
 import communication from "@/assets/communication.png"
-// import time from "@/assets/tim"
+import time from "@/assets/time.png"
 import criticalThinking from "@/assets/criticalthinking.png"
 import mathematical from "@/assets/mathematical.png"
+import problemsolving from "@/assets/problemsolver.png"
 
 // educational
 import bachelors from "@/assets/bachelors.png"
 import school from "@/assets/school.png"
 import highschool from "@/assets/highschool.png"
+import masters from "@/assets/masters.png"
 
 // experience
 
@@ -64,7 +70,31 @@ export const TechnicalSkillsInfo = [
         title: 'Excel',
         content: 'Analyze data efficiently',
         pic: excel
-    }
+    },
+    {
+        id: 1003,
+        title: 'Word',
+        content: 'Create & Edit Documents',
+        pic: word
+    },
+    {
+        id: 1004,
+        title: 'Powerpoint',
+        content: 'Design and present slides',
+        pic: powerpoint
+    },
+    {
+        id: 1005,
+        title: 'R Programming',
+        content: 'Analyze & Visualize data',
+        pic: r
+    },
+    {
+        id: 1006,
+        title: 'Power BI',
+        content: 'Visualize Business Insights',
+        pic: powerbi
+    },
 ];
 
 
@@ -88,7 +118,7 @@ export const OtherSkillsInfo = () => {
         {
             id: 3,
             title: t('time management'),
-            pic: '',
+            pic: time,
             rating: 4
         },
         {
@@ -102,6 +132,12 @@ export const OtherSkillsInfo = () => {
             title: t('analytical skills'),
             pic: mathematical,
             rating: 4
+        },
+        {
+            id: 6,
+            title: t('problemSolving'),
+            pic: problemsolving,
+            rating: 4.5
         },
     ]
     return items;
@@ -159,31 +195,32 @@ export const EducationalBackgroundComponentInfo = () => {
             label: t('school'),
             value: t('pashupatiAcademy'),
             location: t('address'),
-            year: '2006-2018',
+            year: '-------',
             pic: school
         },
         {
             id: 102,
             label: t('highSchool'),
-            value: t('kathmanduBernhardtCollege'),
-            location: t('balkhuKathmandu'),
-            year: '2018-2020',
+            value: t('nasa'),
+            location: t('tinkune'),
+            year: '-----',
             pic: highschool
         },
         {
             id: 104,
             label: t('bachelors'),
-            value: t('divyagyanCollege'),
-            location: t('putalisadakKathmandu'),
-            year: `2022 - ${t('now')}`,
+            value: t('smstu'),
+            location: t('balkhuKathmandu'),
+            year: `-------`,
             pic: bachelors
         },
         {
             id: 103,
-            label: 'IELTS',
-            value: '7.5 Overall',
-            year: '2022',
-            pic: ''
+            label: t('masters'),
+            value: t('ratnarajyalaxmi'),
+            location: t('pradarsaniMarga'),
+            year: '-----',
+            pic: masters
         }
 
     ]

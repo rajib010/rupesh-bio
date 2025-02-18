@@ -15,10 +15,6 @@ const Footer = () => {
   const [isSending, setIsSending] = useState(false);
   const { t } = useTranslation();
   const FooterContact = FooterContactComponent();
-  console.log(import.meta.env.VITE_EMAILJS_SERVICE_ID); // Should log your service ID
-console.log(import.meta.env.VITE_EMAILJS_TEMPLATE_ID); // Should log your template ID
-console.log(import.meta.env.VITE_EMAILJS_PUBLIC_KEY); // Should log your public key
-
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -126,7 +122,7 @@ console.log(import.meta.env.VITE_EMAILJS_PUBLIC_KEY); // Should log your public 
         </div>
       </div>
       <Separator className='bg-black dark:bg-white' />
-      <p className='center italic text-sm mt-2'>© 2024 Rajib Pokhrel. Feel free to connect for opportunities. All rights reserved.
+      <p className='center italic text-sm mt-2'>© 2025 Rupesh Pokhrel. Feel free to connect for opportunities. All rights reserved.
       </p>
     </footer>
   );
