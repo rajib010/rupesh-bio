@@ -33,6 +33,7 @@ import internship from "@/assets/internship.jpeg"
 import rbsexperience from "@/assets/rbsexperience.jpeg"
 import professionalSkillDevelopment from "@/assets/professionalskilldevelopment.jpeg"
 import workshoponacturial from "@/assets/workshoponacturial.jpeg"
+import riskmgmt from "@/assets/riskmanagement.jpeg"
 
 import { CertificateCardProps } from "@/components/certificates/CertificateCard"
 
@@ -262,7 +263,7 @@ export const ProfessionalExperienceComponent = () => {
         },
         {
             id: 1,
-            label: t('sa'),
+            label: 'Actuarial & Re-Insurance Analyst    ',
             pic: work2,
             value:t('nlic'),
             location:t('kamaladi'),
@@ -273,6 +274,12 @@ export const ProfessionalExperienceComponent = () => {
 }
 
 export const CERTIFICATESINFO: CertificateCardProps[] = [
+    {
+        id: 1006,
+        label: 'Risk Management & Insurance',
+        year: '17 - 18 September, 2018',
+        pic: riskmgmt
+    },
     {
         id: 1001,
         label: 'Pricing and Reserving in Life Insurance',
@@ -311,5 +318,4 @@ export const CERTIFICATESINFO: CertificateCardProps[] = [
         year: '13-28 Nov, 2024',
         pic: sqltraining
     },
-    
 ]

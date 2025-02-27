@@ -18,7 +18,7 @@ const ExperienceComponent = () => {
                         </div>
                         <h2 className="font-semibold text-sm md:text-lg"> {item.label}</h2>
                         <p className=" text-sm">{item.year}</p>
-                        <p className="my-1">{item.value}</p>
+                        <p className="my-1 text-sm md:text-lg">{item.value}</p>
                         <p className="my-1 text-sm">{item.location}</p>
                     </Card>
                 ))}
