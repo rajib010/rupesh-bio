@@ -9,8 +9,8 @@ const CVSection = () => {
         {t('cvdescription')}
       </p>
       <a
-        href="/RajibCV.pdf" 
-        download="Rajib_Pokhrel_CV.pdf"
+        href="/rupesh_cv.pdf" 
+        download="rupesh_cv.pdf"
         className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition duration-300"
       >
        {t('downloadbutton')}

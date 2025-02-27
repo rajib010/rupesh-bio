@@ -22,13 +22,21 @@ import highschool from "@/assets/highschool.png"
 import masters from "@/assets/masters.png"
 
 // experience
-
+import internshipIcon from "@/assets/internship.png"
+import work from "@/assets/work.png"
+import work2 from "@/assets/work2.png"
 
 // trainings and certificates
+import sqltraining from "@/assets/sqltraining.jpeg"
+import inclusiveInsurance from "@/assets/inclusiveinsurance.jpeg"
+import internship from "@/assets/internship.jpeg"
+import rbsexperience from "@/assets/rbsexperience.jpeg"
+import professionalSkillDevelopment from "@/assets/professionalskilldevelopment.jpeg"
+import workshoponacturial from "@/assets/workshoponacturial.jpeg"
 
 import { CertificateCardProps } from "@/components/certificates/CertificateCard"
 
-import { MapPinHouse, Mail, Phone, Twitter, Linkedin, Facebook } from "lucide-react"
+import { MapPinHouse, Mail, Phone, Twitter, Linkedin, Facebook, Instagram } from "lucide-react"
 
 import { useTranslation } from 'react-i18next';
 
@@ -154,7 +162,7 @@ export const FooterContactComponent = () => {
         {
             id: 'phone',
             icon: Phone,
-            value: '9861943178'
+            value: '+977 9861943178'
         },
         {
             id: 'address',
@@ -167,22 +175,28 @@ export const FooterContactComponent = () => {
 
 export const FooterSocialLinks = [
     {
-        id: 'twitter',
-        url: '',
-        label: 'Twitter',
-        icon: Twitter,
+        id: 'insta',
+        url: 'https://www.instagram.com/russesbro/',
+        label: 'Instagram',
+        icon: Instagram,
     },
     {
         id: 'linkedin',
-        url: '',
+        url: 'https://www.linkedin.com/in/rupesh-pokhrel-639458201/',
         label: 'LinkedIn',
         icon: Linkedin
     },
     {
         id: 'facebook',
-        url: '',
+        url: 'https://www.facebook.com/russes.bro?rdid=u8zpqBufm58dESji&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15siQ8bWgq%2F',
         label: 'Facebook',
         icon: Facebook
+    },
+    {
+        id: 'twitter',
+        url: 'https://x.com/RussesB',
+        label: 'Twitter',
+        icon: Twitter
     },
 ]
 
@@ -195,7 +209,7 @@ export const EducationalBackgroundComponentInfo = () => {
             label: t('school'),
             value: t('pashupatiAcademy'),
             location: t('address'),
-            year: '-------',
+            year: '2004-2013',
             pic: school
         },
         {
@@ -203,7 +217,7 @@ export const EducationalBackgroundComponentInfo = () => {
             label: t('highSchool'),
             value: t('nasa'),
             location: t('tinkune'),
-            year: '-----',
+            year: '2013 - 2015',
             pic: highschool
         },
         {
@@ -211,7 +225,7 @@ export const EducationalBackgroundComponentInfo = () => {
             label: t('bachelors'),
             value: t('smstu'),
             location: t('balkhuKathmandu'),
-            year: `-------`,
+            year: `2016 - 2020/21`,
             pic: bachelors
         },
         {
@@ -219,7 +233,7 @@ export const EducationalBackgroundComponentInfo = () => {
             label: t('masters'),
             value: t('ratnarajyalaxmi'),
             location: t('pradarsaniMarga'),
-            year: '-----',
+            year: '2022 - 2025',
             pic: masters
         }
 
@@ -232,9 +246,28 @@ export const ProfessionalExperienceComponent = () => {
     const items = [
         {
             id: 1,
-            label: t('nothing'),
-            pic: ''
-        }
+            label: t('internship'),
+            pic: internshipIcon,
+            value:t('rbs'),
+            location:t('ramshahpath'),
+            year:'28 Dec 2020 - 06 Aug 2021'
+        },
+        {
+            id: 2,
+            label: t('sa'),
+            pic: work,
+            value:t('rbs'),
+            location:t('ramshahpath'),
+            year:'28 Dec 2020 - 18 June 2022'
+        },
+        {
+            id: 1,
+            label: t('sa'),
+            pic: work2,
+            value:t('nlic'),
+            location:t('kamaladi'),
+            year:`19 June 2022 - ${t('now')}`
+        },
     ]
     return items;
 }
@@ -242,10 +275,41 @@ export const ProfessionalExperienceComponent = () => {
 export const CERTIFICATESINFO: CertificateCardProps[] = [
     {
         id: 1001,
-        label: 'Any Certificate',
-        year: '28 May, 2022',
-        pic: ''
+        label: 'Pricing and Reserving in Life Insurance',
+        year: '02-03 December, 2019',
+        pic: professionalSkillDevelopment
 
+    },
+    {
+        id: 1002,
+        label: "Workshop on Actuarial Science and it's Applications",
+        year: 'Sept 29 - Oct 01, 2021',
+        pic: workshoponacturial
+
+    },
+    {
+        id: 1003,
+        label: 'Internship Experience Letter',
+        year: '28 Dec 2020 - 06 Aug 2021',
+        pic: internship
+    },
+    {
+        id: 1004,
+        label: 'Work Experience From RBS',
+        year: '28 Dec 2020 - 18 June 2022',
+        pic: rbsexperience
+    },
+    {
+        id: 1005,
+        label: 'Inclusive Insurance Training',
+        year: '18-20 Dec, 2024',
+        pic: inclusiveInsurance
+    },
+    {
+        id: 1006,
+        label: 'In House SQL Trainning',
+        year: '13-28 Nov, 2024',
+        pic: sqltraining
     },
     
 ]

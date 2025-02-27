@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Button } from "@/components/ui/button";
-import userImage from "@/assets/image.jpg";
+import userImage from "@/assets/image.jpeg";
 import { Link } from 'react-router-dom';
 
 const IntroContent = () => {

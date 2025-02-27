@@ -15,7 +15,7 @@ const EducationalBackgroundComponent = () => {
                             <img src={item.pic} alt="item-pic" className="w-12 h-12" />
                         </div>
                         <h2 className="font-bold text-sm md:text-xl"> {item.label}</h2>
-                        <p className="italic text-sm md:text-lg">{item.year}</p>
+                        <p className="text-sm my-1">{item.year}</p>
                         <p className="my-1 text-sm md:text-lg">{item.value}</p>
                         <p className="my-1 text-sm md:text-lg">{item.location}</p>
                     </Card>
